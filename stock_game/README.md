@@ -20,5 +20,5 @@ stock_game/
 ├── core.py
 ├── main.py
 ├── scenario.py
-├── us_stock_monthly_close.csv
+├── us_stock.csv
 ```
