@@ -12,7 +12,7 @@ class Scenario:
             {"num":1, "event": "코로나 발생 결과", "start_date": "2019-12", "rewrite_date": "2021-06",
              "explain": "애플,구글,마이크로소프트,아마존,넷플릭스 등은 원격근무 및 스트리밍 서비스 수요 증가로 상승.\n모더나는 백신 개발 기대감으로 상승. 반면 GE는 전통 제조업 위축으로 하락."},
             {"num":2, "event": "Chat GPT 상용화", "start_date": "2020-06", "rewrite_date": "2023-04",
-             "dexplain": "Chat GPT 상용화로 AI 기술 발전을 실감하며 관련 주가 급등."},
+             "explain": "Chat GPT 상용화로 AI 기술 발전을 실감하며 관련 주가 급등."},
             {"num":2, "event": "Chat GPT 상용화 결과", "start_date": "2020-06", "rewrite_date": "2024-02",
              "explain": "Chat GPT 상용화로 AI 기술 발전을 실감하며 관련 주가 급등."},
             {"num":3, "event": "러시아 우크라이나 전쟁 발발 및 장기화", "start_date": "2022-02", "rewrite_date": "2023-11",
