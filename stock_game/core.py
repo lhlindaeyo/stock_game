@@ -89,8 +89,7 @@ class GameCore:
         draw_chart(ticker, start_date, rewrite_date)
 
     def draw(self, screen):
-        if self.game_over:
-            # 종료화면 표시
+        if self.game_over: # 종료화면 표시
             screen.fill((0, 0, 0))
             title = self.font.render("게임 종료", True, (255, 255, 255))
 
@@ -101,9 +100,9 @@ class GameCore:
 
             screen.blit(title, (350, 200))
             screen.blit(total_asset_text, (250, 250))
-            return  # 종료화면만 출력
+            return  # 종료화면 만 출력
 
-        # 기본 게임 화면 렌더링
+        # 기본 게임 화면 표시
         y = 140
         start = self.scroll
         end = min(start + self.max_visible, len(STOCKS))
@@ -116,7 +115,7 @@ class GameCore:
             screen.blit(render, (50, y))
             y += 40
 
-        # 자동 스크롤 조정
+        # 주식 리스트 스크롤 조정
         if self.selected < self.scroll:
             self.scroll = self.selected
         elif self.selected >= self.scroll + self.max_visible:
