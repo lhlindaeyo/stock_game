@@ -14,7 +14,7 @@ class GameCore:
     def __init__(self, font):
         self.font=font
         self.money=10000 # 초기자산
-        self.data=pd.read_csv("us_stock_monthly_close.csv")
+        self.data=pd.read_csv("us_stock.csv")
         self.date_list=pd.to_datetime(self.data["Date"]).tolist() # 시뮬레이션 시간흐름 반영 위해
         self.scenario=Scenario(self.date_list, self.data)  # 시나리오에 전달
         self.show_explain=False

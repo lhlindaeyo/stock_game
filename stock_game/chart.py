@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 def draw_chart(ticker, start_date, override_date):
-    df = pd.read_csv("us_stock_monthly_close.csv")
+    df = pd.read_csv("us_stock.csv")
     df["Date"] = pd.to_datetime(df["Date"])
 
     # 시나리오 기간 필터링
